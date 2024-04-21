@@ -1,0 +1,207 @@
+*{
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+.cont {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+    margin-bottom: 40px;
+	
+}
+.cardPessoasSobre {
+	margin: 20px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 20px;
+    color: white;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.8);
+}
+.sobrePessoas{
+        width: 100%;
+        height: 100%;
+        background-color: aqua;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cardPessoasSobre{
+        width: 220px;
+        height: 350px;
+        border-radius: 20px;
+        overflow: hidden;
+        border: 3px solid #29fd53;
+        position: relative;
+    }
+    .cardPessoasSobre img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+    .card-bodyPessoasSobre{
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: -100%;
+        position: absolute;
+        background: #1f3d4738;
+        backdrop-filter: blur(5px);
+        border-radius: 15px;
+        color: #fff;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: 1s;
+    }
+    .cardPessoasSobre:hover .card-bodyPessoasSobre{
+        right: 0;
+
+    }
+    .card-titlePessoasSobre{
+        text-transform: uppercase;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .card-sub-titlePessoasSobre{
+        text-transform: capitalize;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .card-infoPessoasSobre{
+        font-size: 16px;
+        line-height: 25px;
+        margin: 40px 0;
+        font-weight: 400;
+    }
+
+
+.PalavrasExynosSobre{
+    box-sizing: content-box;
+    height: 50px;
+    padding: 10px 20px 20px 0%;
+    display: flex;
+    color: white;
+    font-family: "Poppins",sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+.PalavraExynosSobre{
+    overflow: hidden;
+}
+.spanExynosSobre{
+    display: block;
+    height: 100%;
+    padding-left:10px ;
+    color: #29fd53;
+    animation: spin_words 6s infinite;
+}
+@keyframes spin_words {
+    10%{
+        transform: translateY(-112%);
+    }
+    25%{
+        transform: translateY(-100%);
+    }
+    35%{
+        transform: translateY(-212%);
+    }
+    50%{
+        transform: translateY(-200%);
+    }
+    60%{
+        transform: translateY(-312%);
+    }
+    75%{
+        transform: translateY(-300%);
+    }
+    85%{
+        transform: translateY(-412%);
+    }
+    100%{
+        transform: translateY(-400%);
+    }
+    
+}
+.linhaseparando{
+    margin-top: 50px;
+    border-top:3px solid #171717;
+    width: 100%;
+    margin-bottom: 50px;
+    font-size: 20px;
+    display: flex;
+}
+.nossanome{
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+}
+.equipenome{
+    color: #29fd53;
+    margin-left: 5px;
+    font-size: 30px;
+    font-weight: 500;
+}
+.informacoesSobre{
+    box-sizing: border-box;
+}
+.informacoesSobre{
+    height: 100%;
+    display: grid;
+    place-items: center center;
+    font-family: 'Poppins',sans-serif;
+}
+.cardsinformacoesSobre{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    padding: 20px;
+    grid-gap: 40px;
+}
+.cardinformacoesSobre{
+    background-color: #1c1b29;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.18);
+}
+.containerinformacoesSobre{
+    position: relative;
+    clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
+}
+.informacoesSobre img{
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+}
+.containerinformacoesSobre:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+    opacity: 0.7;
+}
+.cardinformacoesSobre>.containerinformacoesSobre:after{
+    background-image: linear-gradient(
+        135deg,
+        #29fd53,
+        #222327
+    );
+}
+.detailsinformacoesSobre{
+    padding: 20px 10px;
+}
+.detailsinformacoesSobre>h3{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px 0 15px 0;
+}
+.detailsinformacoesSobre>p{
+    color: #a0a0a0;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+}

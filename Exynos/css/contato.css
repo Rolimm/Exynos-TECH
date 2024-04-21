@@ -1,0 +1,72 @@
+.contato{
+    width: 100%;
+    justify-content: center;
+}
+
+.contatoform{
+    display: flex;
+    border-radius: 35px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    background: #222327;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,rgba(0, 0, 0, 0.2) 0px -3px 0px;
+}
+.contatoform h2{
+    color: #f5f5f5;
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+.contatoform form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.contatoform form label{
+    color: #f5f5f5;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+.contatoform form input{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+.contatoform form input:focus{
+    border-radius: 16px;
+}
+.contatoform form textarea{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+.contatoform form textarea:focus{
+    border-radius: 16px;
+}
+.contatoform form button{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid #f5f5f5;
+    color: #f5f5f5;
+    transition: all 1s;
+    margin-bottom: 20px;
+    margin-top: 2px;
+}
+.contatoform form button:hover{
+    background: #29fd53;
+    border: none;
+    color: #101026;
+    border-radius: 18px;
+}
+.contatoform form button:active{
+    scale: 0.75 ;
+}

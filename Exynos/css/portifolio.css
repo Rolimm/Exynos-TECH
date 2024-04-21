@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.hidden-element img {
+    max-width: 100%; /* A imagem não excederá a largura do contêiner */
+    height: auto; /* Manterá a proporção original da imagem */
+    border-radius: 5px;
+}
+.hidden-element .containerportifolio{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    flex-direction: column;
+}
+.hidden-element .cardportifolio {
+    height: auto; /* A altura agora se ajustará automaticamente ao conteúdo */
+    width: 80%; /* Preencherá a largura disponível */
+    margin: 10px 0; /* Espaçamento menor entre os cards */
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+.hidden-element .intro {
+    width: 100%; /* Preencherá a largura disponível */
+    padding: 6px;
+    background-color: rgba(27, 27, 27, 0.5); /* Cor com alfa para transparência */
+    color: white;
+}
+.hidden-element a{
+    text-decoration: none;
+}
+.hidden-element h1 {
+    font-size: 30px; /* Reduza o tamanho da fonte para telas menores */
+}
+
+.hidden-element p {
+    font-size: 16px; /* Reduza o tamanho da fonte para telas menores */
+}
+.hidden-element .cardportifolio:hover{
+    cursor: pointer;
+    scale: 1.03;
+}
+@media (max-width: 1300px) {
+    .hidden-element .containerportifolio {
+        flex-wrap: wrap; /* Permite que os cards quebrem para uma nova linha */
+    }
+    
+}
