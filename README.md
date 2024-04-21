@@ -7,9 +7,6 @@ front end e back end do projeto Exynos Tech.
         Php
     </li>
     <li>
-        HTML
-    </li>
-    <li>
         CSS
     </li>
     <li>
